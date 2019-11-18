@@ -1,0 +1,146 @@
+.section4 {
+  background-image: url("../images/section4_phone.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.content {
+  width: 260px;
+  margin: 0 auto;
+
+
+  @media (min-width: 48rem) {
+    width: 640px;
+    padding-bottom: 64px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1190px;
+    //    margin-left: 15px;
+    margin: 0 auto;
+    // margin-left: 95px;
+  }
+
+
+  &__text {
+    @include fontss (15px, $whiteCol, 600);
+    line-height: 18px;
+    padding-top: 36px;
+    margin-bottom: 26px;
+
+    @media (min-width: 48rem) {
+      font-size: 20px;
+      padding-top: 55px;
+      margin-bottom: 35px;
+      line-height: 24px;
+    }
+
+    @media (min-width:1200px) {
+      width: 680px;
+      font-size: 30px;
+      padding-top: 6.25rem;
+      margin-bottom: 3.375rem;
+      line-height: 2.25rem;
+    }
+  }
+
+  &__title {
+    @include fontss (1.17rem, $blueCol, 700);
+    margin-bottom: 25px;
+    line-height: 24px;
+
+    @media (min-width: 48rem) {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 700px;
+      font-size: 48px;
+      margin-bottom: 58px;
+      line-height: 58px;
+    }
+  }
+
+  &__button {
+    @include fontss (14px, $deeporange, 700);
+    width: 260px;
+    height: 70px;
+    border: 0.125rem solid;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+    @media (min-width: 48rem) {
+      display: block;
+      width: 530px;
+      height: 70px;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    @media (min-width: 1200px) {
+      width: 683px;
+      height: 109px;
+      font-size: 30px;
+    }
+  }
+
+  &__button:hover {
+    background-color: #ff6b08;
+    color: #ffffff;
+    border: none;
+  }
+}
+
+.information {
+  @media (min-width: 48rem) {
+    width: 384px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 410px;
+    position: absolute;
+    margin-left: 750px;
+  }
+}
+
+.information__text {
+  @include fontss (13px, $whiteCol);
+  margin-bottom: 25px;
+  line-height: 19px;
+  color: #c0c2c5;
+
+  @media (min-width: 48rem) {
+    font-size: 16px;
+    line-height: 19.04px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+
+
+.information__text::before {
+  display: block;
+  content: "";
+  background-color: #00eaff;
+  height: 3px;
+  width: 61px;
+  margin-bottom: 15px;
+
+  @media (min-width: 48rem) {
+    height: 2px;
+    width: 64px;
+  }
+}
+
+.information__text-decor {
+  color: #ffffff;
+}

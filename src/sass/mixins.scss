@@ -1,0 +1,8 @@
+@mixin fontss($fontSize, $fontColor, $fontWeight: 400, $fontFamily: 'Acrom') {
+  font-size: $fontSize;
+  color: $fontColor;
+  font-weight: $fontWeight;
+  font-family: $fontFamily;
+}
+
+

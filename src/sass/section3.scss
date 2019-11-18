@@ -1,0 +1,249 @@
+.section3 {
+  margin: 0 auto;
+  width: 260px;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.section3__head {
+  @include fontss(20px, #282d36, 900);
+  padding-top: 57px;
+  padding-bottom: 37px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    text-align: center
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 48px;
+    width: 475px;
+  }
+}
+
+.section3__bigdiv {
+  @media (min-width:1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 1170px;
+    padding-bottom: 140px;
+  }
+}
+
+.section3__fichitem {
+  // margin: 20px 15px;
+  @include fontss(30px, $blueCol, 700)
+}
+
+
+.section3__fich {
+  list-style-type: none;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+    width: 174px;
+    text-align: left;
+  }
+}
+
+.section3__headitem {
+  margin: 0 auto;
+  width: 225px;
+
+  @media (min-width: 768px) {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // height: 38px;
+  }
+
+  @media (min-width:1200px) {
+    justify-content: space-around
+  }
+}
+
+.fich__describtion4 {
+  margin-bottom: 10px;
+  @include fontss(14px, #1b202a);
+
+  @media (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+}
+
+.section3__photo {
+  background-image: url(../images/map.png);
+  width: 315px;
+  height: 193px;
+  margin-top: -136px;
+  filter: alpha(Opacity=25);
+  opacity: 0.25;
+  position: absolute;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    margin-left: 340px;
+    margin-top: -70px;
+    opacity: 0.4;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: -70px;
+    margin-left: 240px;
+    opacity: 0.6;
+
+  }
+}
+
+.section3__fichit {
+  @include fontss(14px, #1b202a, 700);
+  text-align: left;
+  width: 260px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+
+  @media (min-width:768px) {
+    padding-left: 0px;
+  }
+}
+
+.section3__fichli {
+  list-style-type: none;
+}
+
+.section3__fichli:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.section3__fichul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 40px;
+
+  @media (min-width: 768px) {
+    width: 430px;
+  }
+}
+
+.section3__fichp::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #00eaff;
+  white-space: normal;
+  margin-right: 20px;
+
+  @media (min-width: 768px) {
+    top: 2px;
+    left: 0px;
+    position: absolute;
+  }
+}
+
+.section3__div {
+  @media (min-width: 768px) {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 15px
+  }
+}
+
+.section3__fichheader {
+  white-space: nowrap;
+  @include fontss(25px, $blueCol, 700)
+}
+
+.section3__fichp {
+  @include fontss(14px, #76797f);
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    position: relative;
+  }
+}
+
+.section3__fichdescribtion {
+  @include fontss(14px, #1b202a)
+}
+
+.section3__each {
+  @include fontss(14px, #1b202a, 900);
+
+  @media (min-width: 768px) {
+    padding-top: 52px;
+    font-size: 18px;
+    text-align: center;
+    width: 420px;
+    margin: 0 auto;
+    padding-bottom: 38px;
+  }
+}
+
+.section3__headeach {
+  @media(min-width: 768px) {
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 0.16);
+    position: relative;
+    background-color: #fff;
+
+    @media(min-width: 1200px) {
+      width: 600px;
+    }
+  }
+
+  &::before {
+    @media (min-width:768px) {
+
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: #e2e5e7;
+      z-index: -1;
+      margin-left: -18px;
+      transform: translate(-50%, 0%);
+      margin-top: 18px;
+    }
+
+    @media (min-width: 1200) {
+      width: 600px;
+    }
+  }
+}
+
+.section3__divstatic {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.section3__itcompanys {
+  @media (min-width: 768px) {
+    width: 620px;
+    margin: 0 auto;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 500px;
+    margin: 0 auto;
+    // margin-left: 20;
+  }
+}

@@ -1,0 +1,154 @@
+.section1-container1 {
+  width: 320px;
+}
+
+.section1__title {
+  @include fontss (20px, #222222, 700);
+  line-height: 30px;
+  padding-top: 34px;
+  padding-bottom: 26px;
+  display: block;
+  margin: 0 auto;
+  width: 284px;
+}
+
+.section1__list {
+  list-style: none;
+  padding-bottom: 38px;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.section1__item {
+  @include fontss (14px, #222222);
+  line-height: 20px;
+  position: relative;
+  margin-left: 30px;
+
+  &:hover {
+    color: $blueCol;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: -34px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+
+
+  &::before {
+    background-image: url(./../images/imgSect01.png);
+  }
+
+
+  @media (min-resolution: 192dpi),
+  (min-resolution: 2ppx) {
+    &::before {
+      background-image: url(./../images/imgSect01@2x.png);
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .section1-container {
+    width: 748px;
+    margin: 0 auto;
+  }
+
+
+  .section1__title {
+    width: 630px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 50px;
+    padding-bottom: 36px;
+
+    &-span {
+      margin-left: 24px;
+      position: relative;
+    }
+  }
+
+  .section1__list {
+    padding-bottom: 56px;
+    width: 620px;
+    margin: o auto;
+  }
+
+  .section1__item {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .section1__title-span::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: #222222;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .section1-container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .section1__title {
+    font-size: 48px;
+    line-height: 60px;
+    width: 522px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section1__list {
+    width: 488px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section1__item {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .section1__title-span {
+    margin-left: 38px;
+
+
+    &::after {
+      top: 48px;
+      right: 30px;
+      width: 20px;
+      height: 4px;
+    }
+  }
+
+  .section1__list {
+    padding: 0;
+  }
+}
